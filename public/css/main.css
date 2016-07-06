@@ -7,12 +7,49 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-.nav {
-  height: 100px;
-  width: 100px;
-  background: pink;
-  position: absolute;
-  top: 100px;
-  right: auto;
-  bottom: auto;
-  left: 200px; }
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: white; }
+
+a {
+  color: #00B7FF; }
+
+.p {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 23.2317613015%;
+  background: #ffff66; }
+  .p:last-child {
+    margin-right: 0; }
+  .p::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.help-articles {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffff66; }
+  .help-articles::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.help-article {
+  background: #66b366;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .help-article::after {
+    clear: both;
+    content: "";
+    display: table; }

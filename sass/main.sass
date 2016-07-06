@@ -1,15 +1,28 @@
 @import 'basics/_body-element'
-@import 'tools/bourbon/bourbon'
+@import 'bourbon'
+@import 'neat'
 
-.nav
-	+size(100px)
-	background: pink
-	+position(absolute, 100px auto auto 200px)
+body
+	padding: 50px
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+	background: white
 
-// body
-// 	padding: 50px
-// 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-// 	background: pink
+a
+	color: #00B7FF
 
-// a
-// 	color: #00B7FF
+
+.p
+	+span-columns(3)
+	background: tint(yellow, 40%)
+	+clearfix
+
+
+.help-articles
+	+outer-container
+	background: tint(yellow, 40%)
+
+.help-article
+	background: tint(green, 40%)
+	+outer-container
+
+

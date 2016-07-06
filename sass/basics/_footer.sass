@@ -1,0 +1,22 @@
+.footer-nav-container {
+	@include position(fixed, 0 0px 0px 0px);
+	background-color: $black;
+}
+
+.footer-nav {
+	height: 94px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+
+	a {
+		margin: 0 10px;
+		position: relative;
+		top: 34px;
+
+		&:hover, &.active {
+			top: 14px;
+		}
+	}
+}

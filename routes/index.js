@@ -24,8 +24,8 @@ router.get('/user', function(req, res) {
   res.render('user', { title: 'User' });
 });
 
-router.get('/confirm-details', function(req, res) {
-  res.render('confirm-details', { title: 'Confirm Details' });
+router.get('/help', function(req, res) {
+  res.render('help', { title: 'Help File' });
 });
 
 router.get('/send-invitations', function(req, res) {
