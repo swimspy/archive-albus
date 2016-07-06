@@ -1,7 +1,15 @@
-body
-	padding: 50px
-	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-	background: pink
+@import 'basics/_body-element'
+@import 'tools/bourbon/bourbon'
 
-a
-	color: #00B7FF
+.nav
+	+size(100px)
+	background: pink
+	+position(absolute, 100px auto auto 200px)
+
+// body
+// 	padding: 50px
+// 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+// 	background: pink
+
+// a
+// 	color: #00B7FF

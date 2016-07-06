@@ -1,7 +1,18 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: pink; }
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Fira Sans", sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
 
-a {
-  color: #00B7FF; }
+.nav {
+  height: 100px;
+  width: 100px;
+  background: pink;
+  position: absolute;
+  top: 100px;
+  right: auto;
+  bottom: auto;
+  left: 200px; }
