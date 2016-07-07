@@ -1,6 +1,6 @@
 html
 	head
-		link(rel='stylesheet', href='/css/landing.css')
+		link(rel='stylesheet', href='/css/user.css')
 	body
 		.nav
 			a(href="/") Swimspy
@@ -17,3 +17,25 @@ html
 			button(type="submit" name="action") Submit
 		br
 		br
+		form
+			ul.flex-outer
+				li
+					label(for='first-name') First Name
+					input#first-name(type='text', placeholder='Enter your first name here')
+				li
+					label(for='last-name') Last Name
+					input#last-name(type='text', placeholder='Enter your last name here')
+				li
+					label(for='email') Email
+					input#email(type='email', placeholder='Enter your email here')
+				li
+					label(for='phone') Phone
+					input#phone(type="tel", placeholder='Enter your phone here')
+				li
+					label(for='message') Message
+					textarea#message(rows='6', placeholder='Enter your message here')
+				li
+					p Age
+					ul.flex-inner
+				li
+					button(type='submit') Submit
