@@ -1,41 +1,9 @@
 html
 	head
+		script(src="https://use.fontawesome.com/0c40da25e8.js")
 		link(rel='stylesheet', href='/css/user.css')
 	body
-		.nav
-			a(href="/") Swimspy
-
-		br
-		h2 Perfomance Fueled By Reflection
-		br
-		h4 Turn Yours On!
-		br
-		form
-			input(id='tag-name', type='text', placeholder='Tag Name')
-			//- input(id='name', type='text', placeholder='Name')
-			//- input(id='email', type='text', placeholder='Email')
-			button(type="submit" name="action") Submit
-		br
-		br
-		form
-			ul.flex-outer
-				li
-					label(for='first-name') First Name
-					input#first-name(type='text', placeholder='Enter your first name here')
-				li
-					label(for='last-name') Last Name
-					input#last-name(type='text', placeholder='Enter your last name here')
-				li
-					label(for='email') Email
-					input#email(type='email', placeholder='Enter your email here')
-				li
-					label(for='phone') Phone
-					input#phone(type="tel", placeholder='Enter your phone here')
-				li
-					label(for='message') Message
-					textarea#message(rows='6', placeholder='Enter your message here')
-				li
-					p Age
-					ul.flex-inner
-				li
-					button(type='submit') Submit
+		.wrapper
+			a.logotype(href="/") SWIMSPY
+			//- i.fa.fa-hand-peace-o.fa-3x
+			//- h6 performance starts here!

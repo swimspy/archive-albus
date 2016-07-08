@@ -1,23 +1,25 @@
-extends layout
-
+extends layout-index
 block content
-	h1= message
-	p 
-	i.fa.fa-hand-peace-o.fa-3x  
+	h1=message
+	i.fa.fa-hand-peace-o.fa-3x
 	p Version "#{version}", by #{author}
-	p 
-		| Link to 
-		a(href="landing") landing
-		|  page { work in progress }
-	p 
-		| Link to 
-		a(href="user") user
-		|  page { work in progress }
 	p
-		|Link to 
-		a(href="invite") invite
-		|  page { work in progress }
+		| Link to
+		a(href="landing")  landing
+		|  page
+	p
+		| Link to
+		a(href="user")  user
+		|  page
+	p
+		|Link to
+		a(href="invite")  invite
+		|   page
+	p
+		| Link to
+		a(href="landing")  landing
+		|  page
+
 	br
 	br
-	p.
-		 Contact email: ai@swimspy.us
+	p Contact email: ai@swimspy.us

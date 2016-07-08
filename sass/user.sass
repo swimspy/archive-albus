@@ -1,16 +1,57 @@
+@import 'tools/normalize'
 @import 'tools/vars'
+//@import 'basics/typography'
+
 body
-	font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif
-	background: $orange
-	color: #fff
-	padding: 10px 0
+	background: $bianchi
+
+.wrapper
+	max-width: cover
+	margin: 0 auto
+	padding: 10px
+	display: flex
+
+a
+	text-decoration: none
+	display: inline-block
+	transition: all 0.5s
+	display: flex
+	align-items: bottom
+	justify-content: center
+
+
+.logotype
+	color: #FFF
+	line-height: 5
+	letter-spacing: 4px
+	font-size: 56px sans-serif
+	align-items: bottom
+
+/* navbar and navigation */
+
+
+.flex-nav ul
+	border: 1px solid $celeste
+	list-style: none
+	margin: 0
+	padding: 0
+	display: flex
+
+/* Flex Item */
+.flex-nav li
+	flex: 3
+
+.flex-nav .social
+	flex: 1
+	justify-content: center
+	align-text: center
 
 .container
-	width: 80%
-	max-width: 1200px
+	width: 100%
 	margin: 0 auto
 	border: 1px
 	background: $blue
+	display: flex
 
 
 .container *
@@ -24,7 +65,7 @@ body
 	flex-wrap: wrap
 	align-items: center
 	border: 1px
-	background: $blue
+	background: $orange
 
 .flex-outer
 	> li > label, li p
@@ -49,5 +90,5 @@ body
 .flex-inner
 	li
 		width: 100px
-	justify-content: space-between
+		justify-content: space-between
 
