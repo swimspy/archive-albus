@@ -1,25 +1,20 @@
 extends layout-index
 block content
-	h1=message
-	i.hand.peace.icon
-	p Version "#{version}", by #{author}
-	p
-		| Link to
-		a(href="landing")  landing
-		|  page
-	p
-		| Link to
-		a(href="user")  user
-		|  page
-	p
-		|Link to
-		a(href="invite")  invite
-		|   page
-	p
-		| Link to
-		a(href="landing")  landing
-		|  page
+	.ui.container
+		.ui.center.aligned.segment
+			i.hand.peace.icon.big
+			h2=title
+			p Version "#{version}"
+		.ui.segment
+			i.info.circle.icon.large
+			.ui.secondary.segment
+				|If you have a "beta code" please enter it here and proceed to quick registration. If you don't have an invitaiton code please request yours by emailing to ai@swimspy.us. We will be glad to send you the invites. Please remember that this is a super beta release and as is service is assumed and you could encounter the bugs we are trying to fix.
+		.ui.segment
+			.ui.form
+				.field.ten.wide
+					input(type='text', placeholder='Enter your beta invitation code')
+		button.ui.right.floated.button(type="submit" name="action" method="post") Next
 
-	br
-	br
-	p Contact email: ai@swimspy.us
+
+
+
