@@ -1,33 +1,45 @@
 html
 	head
-		link(rel='stylesheet', href='/css/landing.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/form.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/button.min.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/icon.min.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/input.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/label.css')
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='script', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/form.js')
+		link(rel='script', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js')
+
 	body
 		.nav
 			a(href="/") Swimspy
-			ul
-				li
-					a(href='sass.html') Stories
-				li
-					a(href='badges.html') Start Today
-				li
-					a(href='collapsible.html') Connect
-		br
+		b
+		h2=title
+		p Version "#{version}", by #{author}
 		p Perfomance Is fueled By Reflection
 		br
 		h6 Turn Yours On!
 		br
-		form
-			input(id='tag-name', type='text', placeholder='Tag Name')
-			//- label(for='tag-name') Tag Name
-			input(id='name', type='text', placeholder='Name')
-			input(id='email', type='text', placeholder='Email')
-			//- label(for='email') Email
-			button(type="submit" name="action") Submit
+		.ui.form
+			.field
+				input(type='text', placeholder='Tag Name')
+			button.ui.right.labeled.icon.button(type="submit" name="action")
+				i.right.arrow.icon
+				| Next
 		br
 		br
+		div.ui.right.labeled.input
+			input(type="text" placeholder="Enter Your Login Tag")
+			div.ui.basic.label @swimspy
+		br
+		br
+		button.ui.right.labeled.icon.button(type="submit" name="action")
+			i.right.arrow.icon
+			| Next
+
+
 		.side-image
 			.images-wrapper
 				.side-image-content
 					h4 Topic Name
 					h1 Message with a gradient image
-					p. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.

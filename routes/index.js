@@ -4,11 +4,15 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', function(req, res) {
-  res.render('index', { message: 'We Love Swimspy', version: 'Albus', author: 'Mr.Benson' });
+  res.render('index', { message: 'We Love Swimspy' , version: 'Albus - 0.0.9', author: 'Mr.Benson' });
 });
 
 router.get('/landing', function(req, res) {
-  res.render('landing', { title: 'Swimspy Landing Page', version: 'Albus Version', author: "Mr. Benson" });
+  res.render('landing', { title: 'Swimspy Landing Page', version: 'Albus - 0.0.9', author: 'Mr. Benson' });
+});
+
+router.get('/user', function(req, res) {
+  res.render('user', { title: 'Swimspy Beta', version: 'Albus - 0.0.9', author: 'Mr. Benson' });
 });
 
 router.get('/about', function(req, res) {
@@ -18,10 +22,6 @@ router.get('/about', function(req, res) {
 
 router.get('/create-name-tag', function(req, res) {
   res.render('create-name-tag', { title: 'Create Your Name Tag' });
-});
-
-router.get('/user', function(req, res) {
-  res.render('user', { title: 'User' });
 });
 
 router.get('/help', function(req, res) {

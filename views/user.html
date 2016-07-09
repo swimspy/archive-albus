@@ -1,46 +1,40 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/user.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/button.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/label.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/container.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/segment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/form.js">
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/segment.js">
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/container.js">
+    <link rel="script" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js">
   </head>
   <body>
-    <div class="nav"><a href="/">Swimspy</a></div><br/>
-    <h2>Perfomance Fueled By Reflection</h2><br/>
-    <h4>Turn Yours On!</h4><br/>
-    <form>
-      <input id="tag-name" type="text" placeholder="Tag Name"/>
-      <button type="submit" name="action">Submit</button>
-    </form><br/><br/>
-    <form>
-      <ul class="flex-outer">
-        <li>
-          <label for="first-name">First Name</label>
-          <input id="first-name" type="text" placeholder="Enter your first name here"/>
-        </li>
-        <li>
-          <label for="last-name">Last Name</label>
-          <input id="last-name" type="text" placeholder="Enter your last name here"/>
-        </li>
-        <li>
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Enter your email here"/>
-        </li>
-        <li>
-          <label for="phone">Phone</label>
-          <input id="phone" type="tel" placeholder="Enter your phone here"/>
-        </li>
-        <li>
-          <label for="message">Message</label>
-          <textarea id="message" rows="6" placeholder="Enter your message here"></textarea>
-        </li>
-        <li>
-          <p>Age</p>
-          <ul class="flex-inner"></ul>
-        </li>
-        <li>
-          <button type="submit">Submit</button>
-        </li>
-      </ul>
-    </form>
+    <div class="ui container">
+      <div class="ui center aligned segment"><i class="hand peace icon big"></i>
+        <h2></h2>
+        <p>Version ""</p>
+      </div>
+      <div class="ui segment"><i class="info circle icon large"></i>
+        <div class="ui secondary segment">If you have a "beta code" please enter it here and proceed to quick registration. If you don't have an invitaiton code please request yours by emailing to ai@swimspy.us. We will be glad to send you the invites. Please remember that this is a super beta release and as is service is assumed and you could encounter the bugs we are trying to fix.</div>
+      </div>
+      <div class="ui segment">
+        <div class="ui form">
+          <div class="field ten wide">
+            <input type="text" placeholder="Enter your beta invitation code">
+          </div>
+        </div>
+      </div>
+      <button type="submit" name="action" method="post" class="ui right floated button">Next</button>
+    </div>
   </body>
 </html>

@@ -32,3 +32,23 @@
 							ul.flex-inner
 						li
 							button(type='submit') Submit
+
+			div.ui.right.labeled.input
+				input.x(type="text" placeholder="Enter Your Login Tag")
+				div.ui.basic.label @swimspy
+
+
+			.ui.form
+			.field
+				input(type='text', placeholder='Invitation code')
+			button.ui.right.labeled.icon.button(type="submit" name="action")
+				i.right.arrow.icon
+				| Next
+		br
+
+	.ui.segments
+		.ui.segment
+			.ui.fluid.action.input
+				input#inv-code(type='text', placeholder='Enter your beta invitation code', method="post", action="landing")
+				.ui.button
+					a(href="landing") Next
