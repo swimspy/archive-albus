@@ -10,11 +10,8 @@ block content
 			.ui.secondary.segment
 				|If you have a "beta code" please enter it here and proceed to quick registration. If you don't have an invitaiton code please request yours by emailing to ai@swimspy.us. We will be glad to send you the invites. Please remember that this is a super beta release and as is service is assumed and you could encounter the bugs we are trying to fix.
 		.ui.segment
-			.ui.form
+			.ui.form(form action='user' method="post" )
 				.field.ten.wide
-					input(type='text', placeholder='Enter your beta invitation code')
-		button.ui.right.floated.button(type="submit" name="action" method="post") Next
-
-
-
+					input#inv-code(type='text' placeholder='Enter your beta invitation code' name='invite' required)
+		button.ui.right.floated.button(type="submit" action="user" method="post") Next
 

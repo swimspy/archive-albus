@@ -1,22 +1,22 @@
-.footer-nav-container {
-	@include position(fixed, 0 0px 0px 0px);
-	background-color: $black;
-}
+.footer-nav-container
+	@include position(relative, 0 0px 0px 0px)
+	background-color: $black
+	margin: 10px
+	padding: 10px
+	border-radius: 5px
+	color: $silver
 
-.footer-nav {
-	height: 94px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-	text-align: center;
+.footer-nav
+	height: 94px
+	margin: 0 auto
+	overflow: hidden
+	position: relative
+	text-align: center
 
-	a {
-		margin: 0 10px;
-		position: relative;
-		top: 34px;
+	a
+		margin: 0 10px
+		position: relative
+		top: 34px
 
-		&:hover, &.active {
-			top: 14px;
-		}
-	}
-}
+		&:hover, &.active
+			top: 14px
