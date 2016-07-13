@@ -122,7 +122,9 @@ a {
   padding: 10px;
   margin: 10px;
   align-self: center;
-  background: #FF851B;
+  background-color: #FF4136;
+  background-image: -webkit-linear-gradient(bottom, #FF4136, #FFDC00);
+  background-image: linear-gradient(to top,#FF4136, #FFDC00);
   height: 400px;
   border-radius: 5px;
   justify-content: center;
@@ -146,7 +148,9 @@ a {
   padding: 10px;
   margin: 10px;
   align-self: center;
-  background: #87CEEB;
+  background-color: #87CEEB;
+  background-image: -webkit-linear-gradient(bottom, #87CEEB, #1CB7BB);
+  background-image: linear-gradient(to top,#87CEEB, #1CB7BB);
   height: 200px;
   border-radius: 5px;
   justify-content: center;

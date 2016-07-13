@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width')
+		title= title
+		block css
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/form.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/button.min.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/icon.min.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/input.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/label.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/container.css')
+			link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/segment.css')
+			link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css')
+			link(rel='stylesheet', href='/css/style.css')
+		block js
+			link(rel='script', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/form.js')
+			link(rel='script', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/segment.js')
+			link(rel='script', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/components/container.js')
+			link(rel='script', href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js')
+			if ENV_DEVELOPMENT
+	body
+		block content
