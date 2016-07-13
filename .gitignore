@@ -82,12 +82,5 @@ dist/
 .sass-cache/
 *.css.map
 
-
-### CodeKit ###
-# General CodeKit files to ignore
-config.codekit
-/min
-
-
 ### Git ###
 *.orig
