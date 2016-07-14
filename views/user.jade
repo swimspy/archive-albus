@@ -1,27 +1,38 @@
 extends layout-user
 block content
 	header.maria
-		h2 Hola Header
+		h2 HOLA SWIMSPY
+	.split-container
+		.split-item.split-left
+			.split-image
+				img(src='http://upload.wikimedia.org/wikipedia/commons/8/89/William.IV.of.Great.Britain.JPG')
+			h3 RIGHT
+			p Lorem Lorem Lorem
+			a(href='/')
+			i.info.circle.icon.large
+			p
+				|If you have a "beta code" please enter it here and proceed to quick registration. If you don't have an invitaiton code please request yours by emailing to ai@swimspy.us. We will be glad to send you the invites. Please remember that this is a super beta release and as is service is assumed and you could encounter the bugs we are trying to fix.
+				form(form action='user' method="post" )
+					field
+						input#inv-code(type='text' placeholder='Enter your beta invitation code' name='invite' required)
+				button(type="submit" action="user" method="post") Next
 
-	section.maria
-		h1 Hola Section One
-		a.button la la la
+		.split-item.split-right
+			.split-image
+				img(src='http://upload.wikimedia.org/wikipedia/commons/b/ba/King_George_V_1911_color-crop.jpg')
+			h3 LEFT
+			p Lorem Lorem Lorem
+			a(href='/')
 
-	.lucia
-		.box.box1 1
-		.box.box2 2
-		.box.box3 3
-		.box.box4 4
-		.box.box5 5
-		.box.box6 6
-		.box.box7 7
-		.box.box8 8
-		.box.box9 9
-		.box.box10 10
 
-	section.maria
-		h1 Hola Section Two
-		a.button lu lu lu
+//	section.maria
+//		h1 Hola Section Two
+//		a.button lu lu lu
 
-	footer.maria
-		h2 Hola Footer
+//	footer.maria
+//		h2 Hola Footer
+
+//	section.maria
+//		h1 Hola Section One
+//		a.button la la la
+
